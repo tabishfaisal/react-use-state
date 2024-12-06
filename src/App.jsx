@@ -10,7 +10,7 @@ function App() {
      <div className="container">
         <div className="row">
           {languages.map((language,index)=> (
-            <button onClick={()=> setLang(language)}>{language.title}</button>
+            <button key={index} onClick={()=> setLang(language)}>{language.title}</button>
           ))}
         </div>
         <div className="card">
